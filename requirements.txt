@@ -5,3 +5,5 @@ scipy
 pandas
 ipython[notebook]
 click==6.6
+lxml 
+bs4

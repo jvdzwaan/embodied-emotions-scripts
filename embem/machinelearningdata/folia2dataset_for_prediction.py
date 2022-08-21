@@ -57,7 +57,7 @@ if __name__ == '__main__':
         fname = os.path.basename(fname).replace('.xml', '')
         out_file = os.path.join(output_dir, '{}.txt'.format(fname))
     else:
-        out_file = os.path.join(output_dir, '{}.txt'.format(file_name[-20:-7]))
+        out_file = os.path.join(output_dir, '{}.txt'.format(os.path.basename(file_name)))
     print 'Writing file: {}'.format(out_file)
 
     # Load document

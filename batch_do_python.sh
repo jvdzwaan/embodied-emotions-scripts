@@ -11,7 +11,7 @@ echo 'saving output files in:' $3
 echo ''
 
 # Create output directory if it doesn't exist
-[[ -d "$3" ]] || mkdir "$3"
+[[ -d "$3" ]] || mkdir -p "$3"
 
 total=0
 
