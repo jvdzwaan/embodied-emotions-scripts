@@ -30,7 +30,7 @@ Emodied Emotions Scripts are stored. Start the iPython notebook server by typing
 
 Click on the notebook you want to use.
 
-There are 6 notebooks:
+There are 7 notebooks:
 
 * `00_CreateClassifiers.ipynb`
 * `01_CreateDataForPrediction.ipynb`
@@ -38,9 +38,13 @@ There are 6 notebooks:
 * `03_AnalysisCorpora.ipynb`
 * `04_HEEMLabelsResults.ipynb`
 * `05_EmotionBodyPartsResults.ipynb`
+* `corpus metadata for DANS.ipynb`
 
 Notebooks 03--05 were used to do the analyses for paper 3. These can be used as
 an example of how to analyse new classified texts.
+
+The corpus metadata notebook was used to create the metadata .csv file for the
+HEEM dataset that will be transfered to DANS.
 
 ## Code
 
@@ -105,6 +109,10 @@ Because for some reason, we used different folia files to generate the tag files
 `batch_add_tags.sh` -> Batch add annotations in tag files to FoLiA files (run from project directory)  
 `kaf2folia.py` -> Insert KAF annotations into a FoLiA files (used with `batch_add_tags.sh`)
 
+`folia2naf.py` -> Create a NAF file containing a terms layer from FoLiA files.  
+`emotions_layer.py` -> Add emotions layer to naf document containing terms layer.  
+`add_emoclusters.py` -> Add emoVals of heem clusters and heem posneg to naf documents.  
+
 ### LIWC
 
 `print_liwc_cat.py` -> Script to print all words in a LIWC category to std out  
@@ -164,7 +172,9 @@ column and a column for every expanded body part
 `predictions2emotion_expanded_bodypart_pairs.py` -> Generate pairs (emotion
 label - expanded body part) for predicted labels.  
 `predictions2emotion_concept_pairs.py` -> Generate emotion label - concept type
-pairs for predicted labels
+pairs for predicted labels  
+`json2csv.py` -> save data from the entity_vis/embem_entity_graph_title graph to
+csv
 
 ### Embem
 

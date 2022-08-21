@@ -11,6 +11,12 @@ heem_emotion_labels = ['Achterdocht', 'Angst', 'Bedruktheid',
                        'Verwondering', 'Walging', 'Wanhoop', 'Welwillendheid',
                        'Woede', 'Wraakzucht', 'Wrevel', 'Wroeging', 'Wrok']
 
+heem_humor_modifier_labels = ['ontkennend', 'koud', 'donker', 'hard', 'zoet',
+                              'droog', 'warm', 'samentrekkend', 'nat', 'zacht',
+                              'zuur', 'uitdijend', 'bitter', 'licht']
+
+heem_intensifier_labels = ['versterkend', 'afzwakkend']
+
 heem_body_part_labels = ["Heart", "Longs", "Jaws", "Ears", "Mind", "Head",
                          "Arms", "Hair", "Bones", "Lips", "Horns",
                          "Throat", "Tooth", "Conscience", "Knees", "Limbs",
@@ -64,3 +70,20 @@ heem_labels_en = {'Emotie': 'Emotion',
                   'Wrevel': 'Annoyance',
                   'Wroeging': 'Remorse',
                   'Wrok': 'Spitefulness'}
+
+heem_modifiers_en = {'ontkennend': 'negation',
+                     'koud': 'cold',
+                     'versterkend': 'intensifying',
+                     'afzwakkend': 'weakening',
+                     'donker': 'dark',
+                     'hard': 'hard',
+                     'zoet': 'sweet',
+                     'droog': 'dry',
+                     'warm': 'warm',
+                     'samentrekkend': 'astringent',
+                     'nat': 'wet',
+                     'zacht': 'soft',
+                     'zuur': 'acid',
+                     'uitdijend': 'expanding',
+                     'bitter': 'bitter',
+                     'licht': 'light'}
