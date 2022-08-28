@@ -103,8 +103,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('input_dir', help='directory containing FoLiA XML '
                         'files containing annotations')
-    parser.add_argument('metadata', help='the name of the csv file containing '
-                        'collection metadata')
+    # parser.add_argument('metadata', help='the name of the csv file containing '
+    #                     'collection metadata')
     parser.add_argument('output_dir', help='the directory where the '
                         'generated KAF files should be saved')
     args = parser.parse_args()
@@ -140,8 +140,8 @@ if __name__ == '__main__':
         # create output naf xml tree
         root, naf_document, header, text, terms = create_naf()
 
-        create_fileDesc(fi, text_id, args.metadata, ctime, header)
-        create_public(text_id, header)
+        # create_fileDesc(fi, text_id, args.metadata, ctime, header)
+        # create_public(text_id, header)
 
         # Load document
         if fi.endswith('.gz'):
@@ -190,11 +190,12 @@ if __name__ == '__main__':
                     s_id, term_id, offset = xml2naf(s_xml, s_id, term_id,
                                                     offset, text, terms)
         # linguistic processors for terms
-        generator = context.root.attrib.get('generator')
-        name, version = generator.split('-')
+        # generator = context.root.attrib.get('generator')
+        # name, version = generator.split('-')
 
         lps = {}
-        lps[name] = version
+        lps['frog'] = '0.25'
+        lp_terms_datetime = ctime
         create_linguisticProcessor('terms', lps, lp_terms_datetime,
                                    header)
 

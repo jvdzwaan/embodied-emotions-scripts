@@ -1,5 +1,8 @@
 # Embodied Emotions Scripts
 
+Update 2022-08-28: added a Dockerfile and updated the code to be able to create 
+naf files with embodied emotions predictions for new DBNL texts. (See also: 
+[embem-folia-naf](https://github.com/jvdzwaan/embem-folia-naf))
 ## Installation
 
 1. [Install pip](http://pip.readthedocs.org/en/latest/installing/)
